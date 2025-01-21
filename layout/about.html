@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Nikunj Sudani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Themesdesign" name="author" />
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.html" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo text-uppercase" href="index.html">
+                <img src="images/logo-dark.png" class="logo-light" alt="" height="50">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="50">
+            </a>
+
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item active">
+                        <a href="/layout/index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="/layout/about.html" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="/layout/service.html" class="nav-link ">Service</a>
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="/layout/work.html" class="nav-link ">Work</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a href="/layout/testimonial.html" class="nav-link">Testimonial</a>
+                    </li> -->
+                    
+                    <li class="nav-item">
+                        <a href="/layout/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!--end navbar-nav-->
+                <div class="ms-auto ps-2 ps-lg-0">
+                    <a href="#" class="btn btn-dark rounded-pill my-3 my-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+ 
+ <!-- about-me section -->
+ <section class="section about-me" id="aboutme">
+    <!-- container -->
+    <div class="container">
+        <div class="about-box">
+            <div class="row">
+
+                <div class="col-lg-6 position-relative">
+                    <div class="image-round"></div>
+                    <!-- <div class="about-image p-4 pb-0">
+                        <img src="images/about.png" alt="" class="img-fluid">
+                    </div> -->
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-item p-5">
+                        <h2 class="display-5 fw-semibold">About Me</h2>
+                        <p class="text-muted fs-14">It is a long established fact that a reader will be distracted
+                            by the readable content of a page when looking at its layout. The point of using normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it
+                            look like readable English..</p>
+
+                        <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Skills</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Experience</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Education</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+                                <div class="skill-item mt-4 pt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Development</h6>
+                                        <h6>65%</h6>
+                                    </div>
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="65"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item mt-4 pt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Solving Tech Problems</h6>
+                                        <h6>95%</h6>
+                                    </div>
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item mt-4 pt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Branding</h6>
+                                        <h6>80%</h6>
+                                    </div>
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+
+                                <div class="experience">
+                                    <div class="row position-relative">
+                                        <div class="col-2">
+                                            <div class="border-left"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="mt-4 pt-2">
+                                                <h5>IT Support Executive</h5><br>
+                                                <h6>Rashmi Engicon Pvt. Ltd</h6>
+                                                <p class="text-muted fs-15">Oct 2024 - Present</p>
+                                                <p class="text-muted fs-15">There are many variations of passages of
+                                                    Lorem Ipsum available, but the majority have fered altation in
+                                                    some form, by injmour, or randomised words which don't look even
+                                                    slightlievable. </p>
+                                            </div>
+                                            <div class="mt-4 pt-2">
+                                                <h5>Python Development</h5><br>
+                                                <h6>Infolabz Pvt. Ltd</h6>
+                                                <p class="text-muted fs-15">Jun 2023 - Apr 2024</p>
+                                                <p class="text-muted fs-15">There are many variations of passages of
+                                                    Lorem Ipsum available, but the majority have fered altation in
+                                                    some form, by injmour, or randomised words which don't look even
+                                                    slightlievable. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="experience">
+                                    <div class="row position-relative">
+                                        <div class="col-2">
+                                            <div class="border-left"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="mt-4 pt-2">
+                                                <h5>Master of Science (Cyber Security)</h5>
+                                                <p class="text-muted fs-15 mb-0">2024 - Present</p>
+                                                <p class="text-muted fs-15 mb-0">There are many variations of
+                                                    passages of Lorem Ipsum available.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row position-relative">
+                                        <div class="col-2">
+                                            <div class="border-left"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="mt-4 pt-2">
+                                                <h5>Bachelor of Computer Application</h5>
+                                                <p class="text-muted fs-15 mb-0">2021 - 2024 (3 year)</p>
+                                                <p class="text-muted fs-15">The majority have fered altation in some
+                                                    form, by injmour, or randomised words which don't look even
+                                                    slightlievable. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end container -->
+</section>
+<!-- end about-me -->
+  <!--Bootstrap Js-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Slider Js -->
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/swiper.min.js"></script>
+
+  <!-- conter -->
+  <script src="js/counter.init.js"></script>
+
+  <!-- App Js -->
+  <script src="js/app.js"></script>
+ </body>
+ </html>
